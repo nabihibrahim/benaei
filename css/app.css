@@ -1,0 +1,598 @@
+@font-face{
+    font-family: 'Tajawal', sans-serif;
+    src: url(../font/ArbFONTS-Tajawal-Black.ttf);
+    src: url(../font/ArbFONTS-Tajawal-Bold-1.ttf);
+    src: url(../font/ArbFONTS-Tajawal-ExtraBold.ttf);
+    src: url(../font/ArbFONTS-Tajawal-ExtraLight.ttf);
+    src: url(../font/ArbFONTS-Tajawal-Light.ttf);
+    src: url(../font/ArbFONTS-Tajawal-Medium.ttf);
+    src: url(../font/ArbFONTS-Tajawal-Regular-1.ttf);
+}
+/*============ General =============*/
+:root{
+    --dropdown-background: white;
+    --dropdown-width: 250px;
+}
+.bg-yellow{
+    background-color: #F9CA24;
+}
+.bg-grey{
+    background-color:#707070 ;
+}
+.bg-light-grey{
+    background-color: #CED4DA ;
+}
+.bg-dark-grey{
+    background-color: #434A51;
+}
+.bg-silver{
+    background-color: #F1F3F5;
+}
+.text-yellow{
+    color: #F9CA24 !important;
+}
+.text-grey{
+    color:#707070 ;
+}
+.text-light-grey{
+    color: #CED4DA ;
+}
+.text-dark-grey{
+    color: #434A51;
+}
+.text-silver{
+    color: #F1F3F5;
+}
+.text-small{
+    font-size: 14px;
+}
+button.bg-yellow:hover{
+    background-color: #fff;
+    border: 1px solid #F9CA24;
+    color: #F9CA24 !important;
+    transition: all .3s ease-in-out;
+}
+/*============= End of General =============*/
+/*=============  Header ===============*/
+
+.input-group{
+    width: 25% !important;
+    margin-right: 8%;
+}
+::placeholder{
+    text-align: right;
+}
+select{
+    margin-right: 5%;
+}
+.middle button{
+    padding: 10px 23px;
+    margin: 0 10px;
+}
+.middle .dropdown .dropdown-menu {
+    position: absolute;
+    padding: 70px 0;
+    width: var(--dropdown-width);
+    right: -123%;
+    margin-left: calc((var(--dropdown-width) / 2)  * -1);
+    box-sizing: border-box;
+    z-index: 1;
+    
+    background: var(--dropdown-background);
+    border-radius: 6px;
+    list-style: none;
+  }
+  .middle .dropdown .dropdown-menu::before {
+    content: ' ';
+    position: absolute;
+    width: 0;
+    height: 0;
+    top: -10px;
+    left: 50%;
+    margin-left: -10px;
+    border-style: solid;
+    border-width: 0 10px 10px 10px;
+    border-color: transparent transparent var(--dropdown-background) transparent;
+  }
+.nav-link {
+    color: #434a51;
+    font-size: 17px;
+}
+a.nav-link:hover{
+    color: #F9CA24 !important;
+}
+.dropdown .dropdown-menu {
+    position: absolute;
+    padding: 20px 0;
+    width: var(--dropdown-width);
+    left: 50%;
+    margin-left: calc((var(--dropdown-width) / 2)  * -1);
+    box-sizing: border-box;
+    z-index: 2;
+    
+    background: var(--dropdown-background);
+    border-radius: 6px;
+    list-style: none;
+  }
+.dropdown .dropdown-menu::before {
+    content: ' ';
+    position: absolute;
+    width: 0;
+    height: 0;
+    top: -10px;
+    left: 50%;
+    margin-left: -10px;
+    border-style: solid;
+    border-width: 0 10px 10px 10px;
+    border-color: transparent transparent var(--dropdown-background) transparent;
+  }
+/*============= End Header ===============*/
+
+/*=============  Carousel ===============*/
+.carousel img{
+    widows: 100%;
+    height: 68vh;
+}
+/*============= End Carousel ===============*/
+/*=============  Card ===============*/
+.card{
+    box-shadow: 1px 1px 1px #b6b6b6;
+    position: relative;
+    overflow: hidden;
+}
+.card img{
+    width: 100%;
+    height: 100%;
+    transition: all 1s ease-in-out;
+    
+}
+.card img:hover{
+    transform: scale(1.2);
+    cursor: zoom-in;
+}
+.card .card-footer{
+    transition: all .6s ease-in-out;
+}
+.card .card-footer:hover{
+    background-color: #F9CA24;
+    cursor: pointer;
+}
+.card i{
+    position: absolute;
+    top: 10px;
+    left:20px;
+    font-size: 20px;
+}
+.card.about p{
+    font-size: 13px;
+}
+.checked {
+    color: orange;
+  }
+  span.overline{
+      text-decoration: line-through;
+  }
+  .card span.overline{
+      text-decoration: line-through;
+  }
+  .card span.sale{
+      border: 1px solid #F9CA24;
+      border-radius: 5px;
+      padding: 3px;
+  }
+  a:hover{
+      text-decoration: none;
+  }
+/*============= End Card ===============*/
+/*=============  Company ===============*/
+.company.container-fluid{
+    padding-left: 0 !important;
+    padding-right: 0 !important;
+}
+.company .container  .company-logo{
+    position: relative;
+    top: -30%;
+
+}
+.company .container .info{
+    padding-top: 3%;
+}
+
+/*============= End Company ===============*/
+/*============= shopping-bag ===============*/
+.shopping-bag .card .side-line1{
+    border-left: 1px solid #CED4DA;
+}
+.shopping-bag .card .side-line2{
+    border-left: 1px solid #CED4DA;
+    height: 100%;
+}
+.shopping-bag .card .side-line3{
+    border-left: 1px solid #CED4DA;
+    height: 100%;
+}
+.shopping-bag .card i{
+    position: static;
+}
+/*============= End shopping-bag ===============*/
+/*============= member ===============*/
+/* 
+.team-member {
+    margin: 0 15px;
+}
+
+.team-member-info {
+    padding: 10px 0 30px 0;
+}
+
+h4.team-member-name {
+    font-size: 22px;
+    font-weight: 700;
+    letter-spacing: 1px;
+    padding-top: 2px;
+}
+
+h4.team-member-designation {
+    color: #34c6d3;
+    font-size: 15px;
+    font-weight: 700;
+    font-style: italic;
+    letter-spacing: 1px;
+    padding-top: 5px;
+} */
+
+/*============= End member ===============*/
+/*============= sitting-btn ===============*/
+.sitting-btn{
+    width: 60px;
+    height: 40px;
+    background-color: #F9CA24;
+    position: fixed;
+    right: 0;
+    top: 35%;
+}
+.sitting-btn i{
+    font-size: 20px;
+    padding-top: 10px;
+}
+/*============= End sitting-btn ===============*/
+/*============= side nav ===============*/
+.sidenav {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    bottom: 0;
+    right: 0;
+    background-color: #F1F3F5;
+    overflow-x: hidden;
+    transition: 0.5s;
+    padding-top: 0;
+  }
+  
+  .sidenav a {
+    padding: 8px 32px 8px 0px;
+    text-decoration: none;
+    font-size: 14px;
+    color: #000;
+    display: block;
+    transition: 0.3s;
+    text-align: right;
+    position: relative;
+  }
+  
+  .sidenav a:hover {
+    color: #b4afaf;
+  }
+  
+  .sidenav .closebtn {
+    position: absolute;
+    top: -12px;
+    left: 20px;
+    font-size: 22px;
+    margin-left: 10px;
+    color: #fff;
+  }
+  @media screen and (max-height: 450px) {
+    .sidenav {
+        padding-top: 10px;
+    }
+}
+
+    
+  
+  .container-side {
+    display: block;
+    position: relative;
+    padding-right: 35px;
+    margin-bottom: 12px;
+    cursor: pointer;
+    font-size: 18px;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+  }
+  
+  /* Hide the browser's default checkbox */
+  .container-side input {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+    height: 0;
+    width: 0;
+  }
+  
+  /* Create a custom checkbox */
+  .checkmark {
+    position: absolute;
+    top: 10%;
+    right: 0;
+    height: 25px;
+    width: 25px;
+    background-color: #CED4DA;
+  }
+  
+  /* On mouse-over, add a grey background color */
+  .container-side:hover input ~ .checkmark {
+    background-color: #F9CA24;
+  }
+  
+  /* When the checkbox is checked, add a blue background */
+  .container-side input:checked ~ .checkmark {
+    background-color: #F9CA24;
+  }
+  
+  /* Create the checkmark/indicator (hidden when not checked) */
+  .checkmark:after {
+    content: "";
+    position: absolute;
+    display: none;
+  }
+  
+  /* Show the checkmark when checked */
+  .container-side input:checked ~ .checkmark:after {
+    display: block;
+  }
+  
+  /* Style the checkmark/indicator */
+  .container-side .checkmark:after {
+    left: 9px;
+    top: 5px;
+    width: 5px;
+    height: 10px;
+    border: solid white;
+    border-width: 0 3px 3px 0;
+    -webkit-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    transform: rotate(45deg);
+  }
+  .checkcontainer {
+    display: block;
+    position: relative;
+    padding-right: 35px;
+    margin-bottom: 12px;
+    cursor: pointer;
+    font-size: 12px;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+.checkcontainer input {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+}
+.checkcontainer input:checked ~ .radiobtn {
+    background-color:  #F9CA24;
+}
+.radiobtn {
+    position: absolute;
+    top: 0;
+    right: 0;
+    height: 25px;
+    width: 25px;
+    background-color: #eee;
+    border-radius: 50%;
+}
+/*============= End side nav ===============*/
+/*============= signin ===============*/
+.col-md-6.col-signin{
+    padding-left: 0 !important;
+}
+
+/*============= End signin ===============*/
+/*=============  signin comapny ===============*/
+.img-sinincompany{
+    background: url(../images/architecture_black_and_white_b_dt.png) center no-repeat;
+    background-size: cover;
+    opacity: .7;
+    height: 300px;
+    width: 100%;
+}
+.img-sinincompany img{
+    margin: 30% auto;
+}
+/*============= End signin company ===============*/
+
+iframe{
+    width: 1000px;
+    height: 450px;
+}
+@media screen and (max-width:947px){
+    iframe{
+        width: 700px;
+        height: 450px;
+    }
+}
+@media screen and (max-width:768px){
+    header img{
+        width: 20%;
+    }
+    header h6,
+    header i{
+        font-size: 55%;
+    }
+    header .language{
+        display: none;
+    }
+    header .middle img.img-fluid{
+        width: 60%;
+
+    }
+    .company .container  .company-logo{
+        top: -50%;
+        width: 15%;
+        padding: 0 !important;
+
+    }
+    .company .container  .info{
+        margin-right: 15%;
+    }
+    iframe{
+        width: 400px;
+        height: 350px;
+    }
+    
+    img.signin{
+        height: 100%;
+    }
+}
+@media screen and (max-width:425px){
+    html,body{
+        font-size: 90%;
+    }
+    header{
+        width: 100%;
+    }
+    header .container .top-right{
+        padding: 0 !important;
+        margin: 0 !important;
+    }
+    header .up img{
+        width: 30%;
+    }
+    header .middle img.img-fluid{
+        width: 100%;
+
+    }
+    ul#myTab.nav.nav-tabs a{
+        font-size: 70%;
+    }
+    iframe{
+        width: 200px;
+        height: 250px;
+    }
+    .signin{
+        padding-bottom: 20px;
+    }
+    img.signin{
+        display: none;
+    }
+    iframe{
+        width: 300px;
+        height: 300px;
+        margin: auto;
+    }
+}
+@media screen and (max-width:320px){
+    html,body{
+        font-size: 70%;
+    }
+    p{
+        font-size: 10%;
+    }
+    .card{
+        height:  90%;
+    }
+    .card .btn{
+        margin: 5px;
+    }
+    .card .card-body p{
+        font-size: 12px;
+        text-align: center;
+    }
+    header select,
+    header h6,
+    header .visitor{
+        display: none;
+
+    }
+    .carousel img{
+        height: 70%;
+    }
+    header .up img{
+        width: 39%;
+    }
+    header .middle img.img-fluid{
+        width: 100%;
+
+    }
+    .sidenav .closebtn{
+        top: -20px;
+    }
+    .container-side{
+        font-size: 14px;
+    }
+    ul#myTab.nav.nav-tabs a{
+        font-size: 100%;
+    }
+    iframe{
+        width: 200px;
+        height: 250px;
+        margin: auto;
+    }
+}
+/*****************/
+.multi-carousel .card img{
+    width: 60%;
+    margin: auto;
+}
+@media (max-width: 768px) {
+    .carousel-inner .carousel-item > div {
+        display: none;
+    }
+    .carousel-inner .carousel-item > div:first-child {
+        display: block;
+    }
+}
+
+.carousel-inner .carousel-item.active,
+.carousel-inner .carousel-item-next,
+.carousel-inner .carousel-item-prev {
+    display: flex;
+}
+
+/* display 3 */
+@media (min-width: 768px) {
+    
+    .carousel-inner .carousel-item-right.active,
+    .carousel-inner .carousel-item-next {
+      transform: translateX(33.333%);
+    }
+    
+    .carousel-inner .carousel-item-left.active, 
+    .carousel-inner .carousel-item-prev {
+      transform: translateX(-33.333%);
+    }
+}
+
+.carousel-inner .carousel-item-right,
+.carousel-inner .carousel-item-left{ 
+  transform: translateX(0);
+}
+.dropdown:hover>.dropdown-menu {
+    display: block;
+  }
+  .dropdown-menu .dropdown-item:hover {
+    
+    background-color: #F9CA24;
+    color: #fff;
+    transition: all .2s ease-in-out;
+  }
+  
+  .dropdown>.dropdown-toggle:active {
+    /*Without this, clicking will make it sticky*/
+      pointer-events: none;
+  }
